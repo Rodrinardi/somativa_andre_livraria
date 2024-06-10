@@ -51,7 +51,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
         
         .painel-desc{
             min-height: 100vh;

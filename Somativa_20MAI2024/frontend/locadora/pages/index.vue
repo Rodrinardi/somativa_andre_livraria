@@ -35,6 +35,14 @@ const toggle = (event: any) => {
 
 <template>
     <main class="login-main flex align-items-center justify-content-center">
+        <div class="chatbot">
+            <Button type="button" icon="pi pi-comment" label="Chatbot" @click="toggle" />
+            <OverlayPanel ref="painel">
+                <iframe allow="microphone;" width="350" height="430"
+                    src="https://console.dialogflow.com/api-client/demo/embedded/6cea1cd9-a872-4f2b-97cc-ec36e8402522">
+                </iframe>
+            </OverlayPanel>
+        </div>
         <section class="login-container flex flex-column align-items-center justify-content-center">
             <h4 class="row-login">Locação de livros Seraiva</h4>
             <div class="row-login">
@@ -93,5 +101,10 @@ const toggle = (event: any) => {
         }
     }
 }
-
+.chatbot{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem
+}
 </style>

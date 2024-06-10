@@ -15,12 +15,12 @@ class GeneroLivroSerializer(serializers.ModelSerializer):
 
 class FotoSerializer(serializers.ModelSerializer):
     class Meta:
-        models = Foto
+        model = Foto
         fields = '__all__'
         many = True
 
 class LivrosSerializer(serializers.ModelSerializer):
-    FotoFK = FotoSerializer(read_only=True)
+    fotoFK = FotoSerializer(read_only=True)
     GeneroLivroFK = GeneroLivroSerializer(read_only=True)
     class Meta:
         model = Livros

@@ -20,7 +20,7 @@
         width: 100vw;
         min-height: calc(100vh - 80px);
         background-color: red;
-        background-image: url("background.jpg");
+        background-image: url("../public/background.jpg");
         background-repeat: repeat;
         background-size: cover;
 

@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     '~/assets/global.scss',
   ],
   auth: {
-    baseURL: 'http://localhost:8000',
+    baseURL: 'somativaandrelivraria-production.up.railway.app',
     provider: {
       type: 'local',
       endpoints: {

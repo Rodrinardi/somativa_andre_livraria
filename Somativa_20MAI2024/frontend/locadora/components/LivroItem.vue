@@ -4,7 +4,7 @@
         index: {type: String}
     })
 
-    const { data: LivroEnc} = await useFetch(`http://127.0.0.1:8000/api/auth/livros/${prop.index}`);
+    const { data: LivroEnc} = await useFetch(`somativaandrelivraria-production.up.railway.app/api/auth/livros/${prop.index}`);
     
 </script>
 

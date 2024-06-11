@@ -1,6 +1,6 @@
 <script setup>
     const route = useRoute();
-    const {data: LivroEnc} = await useFetch(`http://127.0.0.1:8000/api/auth/livros/${route.params.id}`);
+    const {data: LivroEnc} = await useFetch(`https://somativaandrelivraria-production.up.railway.app/api/auth/livros/${route.params.id}`);
 </script>
 
 <template>

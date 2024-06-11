@@ -1,5 +1,5 @@
 <script setup>
-    const { data: LivroEnc} = await useFetch(`http://127.0.0.1:8000/api/auth/livros/`);
+    const { data: LivroEnc} = await useFetch(`https://somativaandrelivraria-production.up.railway.app/api/auth/livros/`);
 </script>
 
 <template>
